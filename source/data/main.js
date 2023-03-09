@@ -6,7 +6,7 @@ export default ({ error, pageName, status }) => ({
 			status
 		}
 	},
-	description: 'My project',
-	pixelperfect: JSON.stringify({ breakpoints: [1200], ext: 'webp' }),
-	projectName: 'My app'
+	description: 'Лендинг для telegram фриланс биржи.',
+	pixelperfect: JSON.stringify({ breakpoints: [320, 660, 1200], ext: 'webp' }),
+	projectName: 'TelegaADS'
 });
