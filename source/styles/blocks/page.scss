@@ -1,5 +1,18 @@
 .page {
-	display: grid;
-	grid-template-rows: min-content 1fr min-content;
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.page__partners {
+	padding: 52px 20px;
+
+	@include media-tablet {
+		padding: 68px 20px;
+	}
+
+	@include media-desktop {
+		padding: 68px 100px;
+	}
 }

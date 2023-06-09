@@ -4,6 +4,12 @@
 	}
 }
 
+@mixin media-tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
 @mixin media-mobile {
 	@media (max-width: 1199px) {
 		@content;
@@ -13,5 +19,27 @@
 @mixin media-retina {
 	@media (min-resolution: 2dppx) {
 		@content;
+	}
+}
+
+.page-header__profile-icon {
+	@include media-tablet {
+		display: none;
+	}
+}
+
+.page-header__profile-picture {
+	@include media-tablet {
+		display: inline-block;
+	}
+}
+
+@include media-tablet {
+	.page-header__profile-icon {
+		display: none;
+	}
+
+	.page-header__profile-picture {
+		display: inline-block;
 	}
 }

@@ -1,0 +1,40 @@
+.search {
+	position: relative;
+	width: 100%;
+
+	@include media-tablet {
+		width: 60%;
+	}
+}
+
+.search__searchbar {
+	width: calc(100% + 58px);
+	margin: 16px 0 0 -20px;
+	padding: 13px 48px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: "Roboto", serif;
+	color: #bbc4d6;
+	border: none;
+	border-top: 1px solid #bbc4d6;
+	outline: none;
+
+	@include media-tablet {
+		width: 100%;
+		margin: 0;
+		padding: 12px 10px 10px 38px;
+		border: 1px solid #ebebf1;
+	}
+}
+
+.search__button {
+	position: absolute;
+	top: 25px;
+	cursor: pointer;
+
+	@include media-tablet {
+		top: 8px;
+		left: 10px;
+	}
+}
